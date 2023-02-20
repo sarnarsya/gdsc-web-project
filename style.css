@@ -1,0 +1,404 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color:#008148;
+    --second-color:#1e3932;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+/* kalo block page (selection) backgroundnya jadi warna itu */
+*::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 40px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.h-icons {
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    color: var(--text-color);
+}
+
+.h-icons i {
+    font-size: 24px;
+    color: var(--bg-color);
+    margin-right: 15px;
+    margin-left: 8px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ebdbc8;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    display: flex;
+}
+  
+.home-img img {
+    width: 100%;
+    object-fit: cover;
+}
+  
+.home-img img:first-child {
+    opacity: 1;
+}
+  
+.home-img img:nth-child(2) {
+    animation: slideImg 4s linear infinite;
+}
+  
+.home-img img:nth-child(3) {
+    animation: slideImg 4s linear infinite 2s;
+}
+  
+@keyframes slideImg {
+    0% {   
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.home-text h1 span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    color: var(--second-color);
+    font-weight: bolder; 
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    color: var(--second-color);
+    font-weight: 600;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #fff;
+    background: var(--second-color)
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.heading h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.row {
+    transition: all .38s ease;
+}
+
+.menu-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.menu-left h4 {
+    font-size: 23px;
+}
+
+.menu-right h5 {
+    color: var(--main-color);
+    font-size: 23px;
+}
+
+.row p {
+    color: var(--second-color);
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.star i {
+    color: orangered;
+    font-size: 17px;
+    margin-right: 4px;
+}
+
+.row:hover {
+    transform: scale(1.04);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ebdbc8;
+    gap: 1.5rem;
+}
+
+.about-img {
+    flex: 1 1 17rem;
+}
+
+.about-text {
+    flex: 1 1 17rem;
+}
+
+.about-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+
+.about-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    font-size: 28px;
+    margin: 0.5rem;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.social a .bx {
+    padding: 5px;
+    color: #fff;
+    background: black;
+    border-radius: 50%;
+}
+
+.social a .bx {
+    background: var(--main-color);
+}
+
+.links {
+    margin: 1rem 0 1rem;
+}
+
+.links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+
+}
+
+.links a:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 1150px) {
+    header {
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text span {
+        font-size: 0.9rem;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-text {
+        padding-top: inherit;
+    }
+    .shop-container .box {
+        margin-top: 6rem;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .heading span {
+        font-size: 0.9rem;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 685px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
