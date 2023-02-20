@@ -112,6 +112,7 @@ header {
 .home-img img {
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
   
 .home-img img:first-child {
@@ -313,6 +314,22 @@ header {
 .links a:hover {
     color: var(--main-color);
 }
+
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.scroll-top i {
+    padding: 8px;
+    font-size: 1.5rem;
+    color: #fff;
+    background: var(--second-color);
+    border-radius: 50px;
+}
+
+/* responsive */
 
 @media (max-width: 1150px) {
     header {
