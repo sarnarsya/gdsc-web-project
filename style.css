@@ -14,6 +14,7 @@
 :root {
     --main-color:#008148;
     --second-color:#1e3932;
+    --bg-color: #fffbf6;
 }
 
 section {
@@ -79,14 +80,14 @@ header {
 
 .h-icons i {
     font-size: 24px;
-    color: var(--bg-color);
+    color: var(--text-color);
     margin-right: 15px;
     margin-left: 8px;
 }
 
 #menu-icon {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
     z-index: 1001;
 }
@@ -97,7 +98,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: #ebdbc8;
+    justify-content: center;
+    background: var(--bg-color);
     gap: 1rem;
 }
 
@@ -105,43 +107,49 @@ header {
     flex: 1 1 17rem;
 }
 
-.home-img {
-    display: flex;
-}
-  
-.home-img img {
-    width: 100%;
-    object-fit: cover;
+#slider {
+    overflow: hidden;
     border-radius: 10px;
+    width: auto;
 }
-  
-.home-img img:first-child {
-    opacity: 1;
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 9s slider infinite;
 }
-  
-.home-img img:nth-child(2) {
-    animation: slideImg 4s linear infinite;
+
+#slider figure img {
+    float: left;
+    width: 20%;
 }
-  
-.home-img img:nth-child(3) {
-    animation: slideImg 4s linear infinite 2s;
-}
-  
-@keyframes slideImg {
-    0% {   
-        opacity: 0;
+
+@keyframes slider {
+    0% {
+        left: 0;
     }
-    5% {
-        opacity: 1;
+    20% {
+        left: 0;
     }
     25% {
-        opacity: 1;
+        left: -100%;
     }
-    30% {
-        opacity: 0;
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
     }
     100% {
-        opacity: 0;
+        left: -300%;
     }
 }
 
@@ -154,12 +162,12 @@ header {
 
 .home-text h1 {
     font-size: 3.2rem;
-    color: var(--second-color);
+    color: var(--text-color);
     font-weight: bolder; 
 }
 
-.home-text h2 {
-    font-size: 1.8rem;
+.home-text p {
+    font-size: 1.5rem;
     color: var(--second-color);
     font-weight: 600;
     margin: 0.5rem 0 1.4rem;
@@ -251,7 +259,7 @@ header {
 .about {
     display: flex;
     flex-wrap: wrap;
-    background: #ebdbc8;
+    background: var(--bg-color);
     gap: 1.5rem;
 }
 
@@ -323,7 +331,7 @@ header {
 
 .scroll-top i {
     padding: 8px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     background: var(--second-color);
     border-radius: 50px;
@@ -374,6 +382,7 @@ header {
         border-top: 2px solid var(--main-color);
         transition: 0.2s;
         text-align: left;
+        align-items: center;
     }
     .navbar.active {
         top: 100%;
