@@ -7,6 +7,7 @@
     <title>gomawoShop</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- box icons -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
@@ -22,16 +23,8 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="h-icons">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart2" viewBox="0 0 16 16">
-                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                  </svg>
-            </a>
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-cart' ></i></a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
@@ -41,44 +34,40 @@
         <div class="home-text">
             <h1><span>Welcome to</span><br>GomawoShop</h1>
             <p>WorldWide best K-Pop merch store</p>
-	        <!-- <h2>We're selling merchs from Stray kids, Treasure, and IVE</h2> -->
+            <!-- <h2>We're selling merchs from Stray kids, Treasure, and IVE</h2> -->
             <a href="#" class="btn">Order here</a>
         </div>
         <!-- perlu resize home-img css & responsive-->
-        <div class="home-img">
-            <div class="img-container">
+        <div class="home-img" id="slider">
+            <figure>
                 <img src="images/skz.png" alt="">
                 <img src="images/ive.png" alt="">
-                <img id="lastImage" src="images/treasure.png" alt="">
-            </div>
+                <img src="images/treasure.png" alt="">
+                <img src="images/skz.png" alt="">
+            </figure>
         </div>
     </section>
 
     <!-- shop product section -->
     <section class="shop" id="shop">
         <!-- STRAY KIDS -->
-        <div class="shop-header">
-            <div class="heading">
-                <span>Shop Now</span>
-                <h1>Stray Kids</h1>
-                <div class="bg-img">
-                    <img src="images/skz-logo.png" alt="">
-                </div>
-            </div>
+        <div class="heading">
+            <span>Shop Now</span>
+            <h1>Stray Kids</h1>
         </div>
         <div class="menu-content">
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="skz-album.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Maxident</h4>
                     </div>
                     <div class="menu-right">
-                        <h5>$11.5</h5>
+                        <h5>Rp. 350.000</h5>
                     </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Album ini dirilis pada tanggal 7 Oktober 2022, melalui JYP Entertainment dan Republic Records, tujuh bulan setelah perilisan album mini mereka sebelumnya, Oddinary.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -89,19 +78,19 @@
             </div>
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="skz-bong.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Lightstick</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 900.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Grup asuhan JYP Entertainment ini memiliki nama lightstick nachimbong. Kata 'Nachim' berasal dari 'nachimban yang artinya kompas. Kemudian, kata itu ditambahi 'bong' dari 'eungwonbong'.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -112,19 +101,19 @@
             </div>
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="skz-merch.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Skzoo</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 300.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Paling baru mengenalkan karakternya adalah Stray Kids dengan SKZOO yang mewakili 8 member.Nama para SKZOO adalah Wolf Chan, Leebit, Dwaekki, Jiniret, Han Quokka, Bbokari, PuppyM, Foxl+Ny.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -135,31 +124,26 @@
             </div>
         </div>
         <!-- IVE -->
-        <div class="shop-header">
-            <div class="heading">
-                <span>Shop Now</span>
-                <h1>IVE</h1>
-                <div class="bg-img" id="ive">
-                    <img src="images/ive-logo.png" alt="">
-                </div>
-            </div>
+        <div class="heading">
+            <span>Shop Now</span>
+            <h1>IVE</h1>
         </div>
         <div class="menu-content">
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="ive-album.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>After Like</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 350.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>After Like adalah album singel ketiga dari girl grup Korea Selatan Ive. Album ini dirilis oleh Starship Entertainment pada tanggal 22 Agustus 2022 dan berisi dua lagu, termasuk single utama dengan nama yang sama.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -170,19 +154,19 @@
             </div>
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="ive-bong.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Lightstick</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 900.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Penggemar IVE sekarang dapat memiliki light stick mereka sendiri. Lightstick IVE memiliki desain yang sederhana, dengan bodi putih dan kubah bundar. Logo IVE ada di dalam kubah bening, panah berujung hati menghiasi dasar kubah.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -193,19 +177,19 @@
             </div>
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="ive-merch.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Baseball Cap</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 200.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Topi bisbol adalah sejenis topi lunak dengan mahkota bundar dan paruh kaku yang memproyeksikan di depan selain itu biasanya terdapat logo. Merupakan salah satu merchandise dari fan-con pertama yang diadakan oleh Ive.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -216,19 +200,14 @@
             </div>
         </div>
         <!-- TREASURE -->
-        <div class="shop-header">
-            <div class="heading">
-                <span>Shop Now</span>
-                <h1>TREASURE</h1>
-                <div class="bg-img" id="treasure">
-                    <img src="images/treasure-logo.png" alt="">
-                </div>
-            </div>
+        <div class="heading">
+            <span>Shop Now</span>
+            <h1>treasure</h1>
         </div>
         <div class="menu-content">
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="treasure-album.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
@@ -236,11 +215,11 @@
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 350.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>The Second Step: Chapter Two adalah album mini kedua dari grup vokal pria asal Korea Selatan Treasure. Album mini ini dirilis oleh YG Entertainment pada tanggal 4 Oktober 2022.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -251,19 +230,19 @@
             </div>
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="treasure-bong.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Lightstick</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 900.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Teulight. Pada 21 Juni 2021, YG Entertainment mengumumkan lightstick TREASURE. Konsep desain seperti "kotak harta karun", serupa dengan nama acara survival YG Treasure Box. Bagian atas lightstick berbentuk seperti perhiasan.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
@@ -274,19 +253,19 @@
             </div>
             <div class="row">
                 <!-- src="(ini yang diganti)" imagesnya diganti sari, sama judulnya juga disesuaiin -->
-                <img src="images/skz-album.png" alt="">
+                <img src="treasure-merch.png" alt="">
                 <div class="menu-text">
                     <div class="menu-left">
                         <!-- ini buat judulnya -->
-                        <h4>The Second Step: Chapter One</h4>
+                        <h4>Truz</h4>
                     </div>
                     <div class="menu-right">
                         <!-- ini buat harganya -->
-                        <h5>$11.5</h5>
+                        <h5>Rp. 300.000</h5>
                     </div>
                 </div>
                 <!-- ini description productnya -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>TRUZ merupakan hasil kerja sama antara Treasure dengan LINE FRIENDS, yang tentunya terinspirasi dari semua anggota Treasure itu sendiri. TRUZ ini menggambarkan karakter dari tiap tiap member yang mereka buat sendiri.</p>
                 <div class="star">
                     <a href="#"><i class='bx bxs-star' ></i></a>
                     <a href="#"><i class='bx bxs-star' ></i></a>
