@@ -7,7 +7,6 @@
     <title>gomawoShop</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <!-- box icons -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
@@ -23,8 +22,16 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="h-icons">
-            <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-cart' ></i></a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg>
+            </a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
@@ -38,22 +45,26 @@
             <a href="#" class="btn">Order here</a>
         </div>
         <!-- perlu resize home-img css & responsive-->
-        <div class="home-img" id="slider">
-            <figure>
+        <div class="home-img">
+            <div class="img-container">
                 <img src="images/skz.png" alt="">
                 <img src="images/ive.png" alt="">
-                <img src="images/treasure.png" alt="">
-                <img src="images/skz.png" alt="">
-            </figure>
+                <img id="lastImage" src="images/treasure.png" alt="">
+            </div>
         </div>
     </section>
 
     <!-- shop product section -->
     <section class="shop" id="shop">
         <!-- STRAY KIDS -->
-        <div class="heading">
-            <span>Shop Now</span>
-            <h1>Stray Kids</h1>
+        <div class="shop-header">
+            <div class="heading">
+                <span>Shop Now</span>
+                <h1>Stray Kids</h1>
+                <div class="bg-img">
+                    <img src="images/skz-logo.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="menu-content">
             <div class="row">
@@ -124,9 +135,14 @@
             </div>
         </div>
         <!-- IVE -->
-        <div class="heading">
-            <span>Shop Now</span>
-            <h1>IVE</h1>
+        <div class="shop-header">
+            <div class="heading">
+                <span>Shop Now</span>
+                <h1>IVE</h1>
+                <div class="bg-img" id="ive">
+                    <img src="images/ive-logo.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="menu-content">
             <div class="row">
@@ -200,9 +216,14 @@
             </div>
         </div>
         <!-- TREASURE -->
-        <div class="heading">
-            <span>Shop Now</span>
-            <h1>treasure</h1>
+        <div class="shop-header">
+            <div class="heading">
+                <span>Shop Now</span>
+                <h1>TREASURE</h1>
+                <div class="bg-img" id="treasure">
+                    <img src="images/treasure-logo.png" alt="">
+                </div>
+            </div>
         </div>
         <div class="menu-content">
             <div class="row">
