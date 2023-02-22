@@ -15,6 +15,7 @@
     --main-color:#008148;
     --second-color:#1e3932;
     --bg-color: #fffbf6;
+    --text-color: #000000;
 }
 
 section {
@@ -75,12 +76,12 @@ header {
     display: flex;
     align-items: center;
     border-radius: 5rem;
-    color: var(--text-color);
+    background: var(--main-color);
+    color: #fff;
 }
 
-.h-icons i {
-    font-size: 24px;
-    color: var(--text-color);
+.h-icons svg{
+    size: 50px;
     margin-right: 15px;
     margin-left: 8px;
 }
@@ -107,50 +108,21 @@ header {
     flex: 1 1 17rem;
 }
 
-#slider {
+.home-img {
     overflow: hidden;
+    display: flex;
+}
+
+.img-container {
+    transition: margin-left 0.5s ease-out;
+    max-width: 600px;
+    display: flex;
+}
+  
+.img-container img {
+    width: 600px;
+    object-fit: cover;
     border-radius: 10px;
-    width: auto;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 9s slider infinite;
-}
-
-#slider figure img {
-    float: left;
-    width: 20%;
-}
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    100% {
-        left: -300%;
-    }
 }
 
 .home-text h1 span {
@@ -186,6 +158,11 @@ header {
     background: var(--second-color)
 }
 
+.shop-header {
+    position: relative;
+    width: 100%;
+}
+
 .heading {
     text-align: center;
     text-transform: uppercase;
@@ -202,6 +179,36 @@ header {
     font-size: 2rem;
     font-weight: 600;
     color: var(--main-color);
+}
+
+.bg-img {
+    position: absolute;
+    width: 400px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -230px;
+    top: -210%;
+    opacity: 0.2;
+}
+
+.bg-img#ive {
+    position: absolute;
+    width: 330px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -170px;
+    top: -170%;
+    opacity: 0.2;
+}
+
+.bg-img#treasure {
+    position: absolute;
+    width: 400px;
+    z-index: -1;
+    left: 50%;
+    margin-left: -230px;
+    top: -210%;
+    opacity: 0.2;
 }
 
 .menu-content {
@@ -331,7 +338,7 @@ header {
 
 .scroll-top i {
     padding: 8px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #fff;
     background: var(--second-color);
     border-radius: 50px;
